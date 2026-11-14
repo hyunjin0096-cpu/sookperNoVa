@@ -1,0 +1,12 @@
+# Raw competition material must not be committed.
+data/
+cache/
+private_cache/
+*.csv
+*.npz
+*.npy
+__pycache__/
+.venv/
+# Self-contained ConvNeXt-Tiny checkpoint >100MiB: use private accessible Drive link in README.
+weights/*.pt
+weights/*.pth
