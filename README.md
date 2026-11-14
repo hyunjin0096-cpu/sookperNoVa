@@ -1,5 +1,15 @@
 # ThermalFusion-GBM 제출 코드 (ResNet18 + LightGBM)
 
+## Pretrained Weights
+
+ResNet18 pretrained weights (45MB):
+
+Google Drive: [https://drive.google.com/file/d/14fMgGU8gVw3R5d0GRltSAgzO8HXo_tCh/view?usp=sharing]
+
+Download the file and place it at:
+
+weights/resnet18.pth
+
 ## 필수 실행 명령
 
 ```bash
