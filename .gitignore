@@ -1,22 +1,22 @@
-# Dataset
+# 대회 원본 데이터
 data/
+*.zip
 
-# Python environment
+# 이미지 특징 캐시 및 기존 학습 결과
+cache/
+artifacts/
+
+# Python 환경
 venv/
 .venv/
 __pycache__/
 *.pyc
 
-# Model artifacts
-*.joblib
-*.pkl
-*.pth
-*.pt
+# 제출 예측 파일
+submission*.csv
 
-# Logs and submissions
-*.log
-submission.csv
+# 대형 ResNet18 가중치
+weights/resnet18.pth
 
-# Secrets
-.env
-.env.*
+# 운영체제 파일
+.DS_Store
