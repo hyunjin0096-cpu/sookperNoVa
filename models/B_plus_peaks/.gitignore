@@ -1,0 +1,23 @@
+# Trained models and checkpoints
+*.joblib
+*.pkl
+*.pth
+*.pt
+*.ckpt
+
+# Private data and predictions
+*.csv
+*.parquet
+*.npz
+*.npy
+*.jpg
+*.jpeg
+*.png
+
+# Caches and environment
+__pycache__/
+cache/
+.venv/
+.env
+.env.*
+artifacts/
