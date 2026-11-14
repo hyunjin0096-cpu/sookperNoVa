@@ -1,0 +1,17 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+cache/
+cache_v4/
+
+outputs_v4/
+
+*.joblib
+*.npz
+
+data/
+battery_data_light/
+
+.env
