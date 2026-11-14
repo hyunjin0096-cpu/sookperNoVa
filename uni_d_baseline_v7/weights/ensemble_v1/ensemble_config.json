@@ -1,0 +1,16 @@
+{
+  "format": "unid-ensemble-v1",
+  "sensor_model": "sensor_model.joblib",
+  "fusion_dir": "fusion",
+  "sensor_weight": 0.5,
+  "fusion_weight": 0.5,
+  "labels": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "note": "Weights fixed in advance from labeled OOF; Test was not used for tuning."
+}
