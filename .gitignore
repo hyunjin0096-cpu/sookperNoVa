@@ -1,0 +1,22 @@
+# Dataset
+data/
+
+# Python environment
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Model artifacts
+*.joblib
+*.pkl
+*.pth
+*.pt
+
+# Logs and submissions
+*.log
+submission.csv
+
+# Secrets
+.env
+.env.*
