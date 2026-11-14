@@ -1,0 +1,91 @@
+모델: lgbm | 입력 컬럼 규격 (Train 기준으로 고정):
+  숫자 컬럼 22개: ['meas_v', 'meas_t1', 'meas_t2', 'meas_p', 'meas_ch4', 'meas_co', 'meas_co2', 'meas_hcn', 'meas_hcl', 'meas_hf', 'meas_n2o', 'meas_no', 'meas_no2', 'meas_so2', 'atmp_t', 'thermal_t', 'bat_class', 'bat_cc', 'soc_status', 'tr_method', 'meas_t1_plus_t2', 'indu_t']
+  범주 컬럼 0개: []
+  가스 센서 10개: ['meas_ch4', 'meas_co', 'meas_co2', 'meas_hcn', 'meas_hcl', 'meas_hf', 'meas_n2o', 'meas_no', 'meas_no2', 'meas_so2']
+  파생 신호(상호작용): ['t1_minus_t2', 't1_minus_atmp', 't2_minus_atmp', 'thermal_minus_t1', 'gas_log_sum'] | 상호작용 피처 사용: False
+  U-Net 모양 피처 사용: True | 물리 기반 지표 사용: True
+  시계열 대상 신호: ['meas_v', 'meas_t1', 'meas_t2', 'meas_p', 'thermal_t', 'img_p99', 'heat_mean', 'heat_p99', 'heat_hot_ratio', 'gas_zero_count', 't1_minus_t2', 't1_minus_atmp', 't2_minus_atmp', 'thermal_minus_t1', 'gas_log_sum', 'gas_active_count', 'gas_grp_nox', 'gas_grp_ch4co', 'unet_hot_area', 'unet_hot_in_warm', 'unet_hot_spread']
+  제외(상수·전부 결측·고유값 과다): [] / 고정 제외: ['meas_a', 'indu_t.1']
+피처 수: 430 (상호작용 ix_ 0개, U-Net unet_ 57개, 물리 ph_ 55개) | 학습 행: 61,499 (원본 33,522 + 증강)
+class_weight=none: Train GroupKFold Macro F1 0.8930 ± 0.0447 | Validation 0.8128 | Validation(15초 간격) 0.8130
+class_weight=balanced: Train GroupKFold Macro F1 0.8947 ± 0.0425 | Validation 0.8013 | Validation(15초 간격) 0.7966
+선택: class_weight=balanced (Train GroupKFold 기준)
+
+[단조성 보정] Train OOF Macro F1 0.8949 → 0.8945 (alpha=1.5, down_eps=0.001)
+  5초 전이행렬(행=현재, 열=다음, 1~6단계):
+        1       2       3       4       5       6
+1  0.9941  0.0056  0.0001  0.0001  0.0001  0.0001
+2  0.0000  0.9842  0.0152  0.0002  0.0002  0.0002
+3  0.0000  0.0000  0.9914  0.0082  0.0002  0.0001
+4  0.0000  0.0000  0.0000  0.9574  0.0383  0.0043
+5  0.0000  0.0000  0.0000  0.0000  0.9641  0.0359
+6  0.0000  0.0000  0.0000  0.0000  0.0000  1.0000
+  → Train OOF에서 개선이 없어 단조성 보정을 끕니다.
+
+[Validation 결과]
+Validation: Macro F1 0.8013
+Validation(15초 간격): Macro F1 0.7966
+   보정 전 F1
+1   1.0000
+2   0.8135
+3   0.9233
+4   0.5233
+5   0.6358
+6   0.9122
+              precision    recall  f1-score   support
+
+           1     1.0000    1.0000    1.0000      4469
+           2     0.7184    0.9375    0.8135       928
+           3     0.9739    0.8777    0.9233      3066
+           4     0.3625    0.9403    0.5233       352
+           5     0.9492    0.4780    0.6358      1134
+           6     0.8755    0.9522    0.9122       251
+
+    accuracy                         0.8963     10200
+   macro avg     0.8133    0.8643    0.8013     10200
+weighted avg     0.9358    0.8963    0.9009     10200
+
+      예측1  예측2   예측3  예측4  예측5  예측6
+실제1  4469    0     0    0    0    0
+실제2     0  870    58    0    0    0
+실제3     0  341  2691   34    0    0
+실제4     0    0     3  331   17    1
+실제5     0    0    11  548  542   33
+실제6     0    0     0    0   12  239
+
+중요도 상위 20개 피처:
+meas_v_cumext                 1455
+unet_hot_offset                988
+indu_t                         920
+meas_t1_max120s                764
+thermal_minus_t1_cumext        763
+unet_warm_edge_grad            752
+ph_meas_v_peak_gap             709
+atmp_t                         706
+ph_meas_v_accel                691
+relative_time_s                681
+t1_minus_t2_mean120s           635
+meas_v_from_first              617
+meas_t1_cumext                 614
+meas_p_from_first              606
+meas_p                         590
+ph_meas_t2_peak_gap            569
+ph_meas_v_since_peak           566
+unet_hot_spread_from_first     548
+ph_meas_v_drop_ratio           547
+unet_hot_spread_cumext         540
+물리 지표 중 최고 순위: 7위 | 물리 지표 중요도 합 비율 0.134
+물리 지표 상위 10개:
+ph_meas_v_peak_gap      709
+ph_meas_v_accel         691
+ph_meas_t2_peak_gap     569
+ph_meas_v_since_peak    566
+ph_meas_v_drop_ratio    547
+ph_meas_p_std60s        511
+ph_meas_t1_peak_gap     492
+ph_meas_t1_dwell70      485
+ph_meas_t2_since70      475
+ph_meas_t2_since120     470
+U-Net 피처 중 최고 순위: 2위 / 430 | U-Net 피처 중요도 합 비율 0.148
+OOF 확률 저장: oof_v5.csv
+모델 저장: model_v5.joblib

@@ -1,0 +1,10 @@
+U-Net 학습 이미지 12,000장 | 확인용 Validation 1,999장 | device=cuda
+epoch 1/8 | loss 1.1715 | Val IoU warm 0.933 hot 0.889 | 18s
+epoch 2/8 | loss 0.6535 | Val IoU warm 0.972 hot 0.940 | 18s
+epoch 3/8 | loss 0.1952 | Val IoU warm 0.973 hot 0.885 | 19s
+epoch 4/8 | loss 0.0692 | Val IoU warm 0.978 hot 0.947 | 18s
+epoch 5/8 | loss 0.0518 | Val IoU warm 0.982 hot 0.933 | 16s
+epoch 6/8 | loss 0.0443 | Val IoU warm 0.982 hot 0.962 | 17s
+epoch 7/8 | loss 0.0375 | Val IoU warm 0.982 hot 0.968 | 17s
+epoch 8/8 | loss 0.0352 | Val IoU warm 0.983 hot 0.966 | 17s
+U-Net 저장: unet.pt
