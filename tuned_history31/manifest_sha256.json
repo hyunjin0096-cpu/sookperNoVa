@@ -1,0 +1,19 @@
+{
+  "verify_tuned_features.py": "1492ca1ec8122d89fe11c2adead92f37a8c16c871b1d54447b3732df3665882c",
+  "frozen_features.py": "d4e63cdee9300a7aac719cb5cf20edacd01f5df32d4258a328d0e9beb90181af",
+  "features.py": "a6677063a7e57db55f8b7b9634c22a8943226415e90abee3f58c5203468be3aa",
+  "check_submission.py": "19648bd74e0f672e5bdd2c4fd90e5c8331e5834910178e9b2875c92fb7a5cfe7",
+  "requirements.txt": "0304c4c1e5aa28e7c9594d294d0c16909dccfae6637933647c12b4cd2a733a9b",
+  "baseline_features.py": "f756cdf043a04621cecc91d45ccf2371de0aaa311348219853f3168f2b53e659",
+  "test.py": "483a330d02830cab1b53b093d7496ae5f12c188219e6878eacc71f56082f4fd9",
+  "image_encoder.py": "ef78de5b303b78f6b7bf0677147deea42146b802236341cbde927e3cb505cbdc",
+  "config.py": "3fb0c3f3a63497222add6ddee0316c25c9a2d11527bd39d791b364e976ce7830",
+  "check_tuned_format.py": "834d8482dc3aab7f96fd074b2f4b5661357b95f14b7ff247d29ffa608b892597",
+  "weights/fold_2.joblib": "c0ae1080916062e14498ea9f9b8155f8af83b5bad075998ed58d94966d330d96",
+  "weights/metadata.json": "410cd9a65448257c6429756db1ee6c2c38d9855336194be7d56eab20c7b04f09",
+  "weights/fold_4.joblib": "60804c128e183e9195fb6072937f571b75484dd4b66ded0db1fd4dc29e9bb81a",
+  "weights/fold_1.joblib": "6fa750d3da5b2b1265e75a1cb0611c88b97f80101b732e4a2496e0fc7645cfde",
+  "weights/fold_0.joblib": "6698301756ffd13f5a3a27191c0695503d33690b042350ad04dfbd73668ee98b",
+  "weights/resnet18.pth": "69f06588236ee97966e5086552b7577bcbc9e622066c3df5d1676f0630143740",
+  "weights/fold_3.joblib": "60d82a2c24c6127b7e677dafad1db406efad488400b1f75a8801a74efd02ca94"
+}
