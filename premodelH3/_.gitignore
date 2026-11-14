@@ -1,0 +1,9 @@
+# 대회 데이터와 거기서 계산한 캐시는 저장소에 올리지 않습니다 (규정)
+cache/
+*.npy
+*_ids.csv
+data/
+battery_data_light/
+blank_check.png
+log_*.txt
+__pycache__/
