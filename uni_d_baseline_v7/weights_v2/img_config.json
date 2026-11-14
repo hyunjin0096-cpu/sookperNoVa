@@ -1,0 +1,20 @@
+{
+ "version": "unid-v2.0",
+ "arch": "resnet18-l3-6ch",
+ "size": 128,
+ "mode": "resize",
+ "folds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "gaps": [
+  5,
+  10,
+  15
+ ],
+ "epochs": 12,
+ "seed": 2026
+}
