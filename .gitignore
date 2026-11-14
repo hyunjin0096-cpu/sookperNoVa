@@ -20,3 +20,7 @@ weights/resnet18.pth
 
 # 운영체제 파일
 .DS_Store
+
+backup_original/
+
+ThermalFusion_GBM_backup/

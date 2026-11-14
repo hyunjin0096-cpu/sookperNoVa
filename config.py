@@ -2,7 +2,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 # 압축을 푼 데이터 폴더를 프로젝트의 data/battery_data_light 에 배치하세요.
-DATA_DIR = ROOT / 'data' / 'battery_data_light'
+DATA_DIR = Path('/home/ubuntu/data/battery_data_light')
 ARTIFACT_DIR = ROOT / 'artifacts'  # 예전 학습 결과와 호환용
 WEIGHTS_DIR = ROOT / 'weights'
 CACHE_DIR = ROOT / 'cache'
