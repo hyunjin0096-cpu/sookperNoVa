@@ -1,0 +1,19 @@
+{
+  "features.py": "a6677063a7e57db55f8b7b9634c22a8943226415e90abee3f58c5203468be3aa",
+  "check_submission.py": "19648bd74e0f672e5bdd2c4fd90e5c8331e5834910178e9b2875c92fb7a5cfe7",
+  "requirements.txt": "0304c4c1e5aa28e7c9594d294d0c16909dccfae6637933647c12b4cd2a733a9b",
+  "baseline_features.py": "f756cdf043a04621cecc91d45ccf2371de0aaa311348219853f3168f2b53e659",
+  "test.py": "f2fe3192aa991fb95c891a9f403e331cdfdf181d22a3a15581a8fa956879864a",
+  "image_encoder.py": "ef78de5b303b78f6b7bf0677147deea42146b802236341cbde927e3cb505cbdc",
+  "config.py": "3fb0c3f3a63497222add6ddee0316c25c9a2d11527bd39d791b364e976ce7830",
+  "check_tuned_format.py": "834d8482dc3aab7f96fd074b2f4b5661357b95f14b7ff247d29ffa608b892597",
+  "lastmile_runtime.py": "392d00f75e14789b6817cc4fce482d0ea6ea3001dbf2c39065fa2d639bd774e4",
+  "train_frozen_cv.py": "d4e63cdee9300a7aac719cb5cf20edacd01f5df32d4258a328d0e9beb90181af",
+  "weights/fold_0_method_0.joblib": "3f04d365ade143d77d15a89e10b4865790251d2e78d81760ce3e0256f504d612",
+  "weights/metadata.json": "1a091401230a91364189530546d49563d028e50bc47171e57945eefd57c2ad19",
+  "weights/fold_2_method_0.joblib": "865d3e00560681a4ba9d1d1777e7641368afc5b19bc4d4c88c8d77dc6cee84f9",
+  "weights/fold_1_method_0.joblib": "dbfa0c841886edda5f1708b2dcc57f514ced22a6aa8bfc589182b40e61e4ad03",
+  "weights/fold_4_method_0.joblib": "8ac6d8f52038ecd2cd5727a56dca39f6d59216dcfdc8ab42b46d4f08e2ae26b8",
+  "weights/resnet18.pth": "69f06588236ee97966e5086552b7577bcbc9e622066c3df5d1676f0630143740",
+  "weights/fold_3_method_0.joblib": "f53e60b3fb7eff21290d90446c23ff503226fb1b29b2fa24d786689a3fa3c88d"
+}
